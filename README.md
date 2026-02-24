@@ -21,15 +21,20 @@ Der Quellcode liegt im privaten Hauptrepository.
 
 Jede Version enthält in der Regel:
 
-- `installer-manifest.json` – Metadaten für Bootstrapper und Downloadziele
+- `installer-manifest.json` – Metadaten (Legacy/Kompatibilität)
 - `PC_Wachter_installer.exe` – Bootstrapper
 - `PCWachterSetup.exe` – eigentliche Setup-Datei
 
 ## Update- und Download-Prinzip
 
-- Der Bootstrapper lädt das Manifest aus dem neuesten Release.
-- Auf Basis des Manifests wird die passende Setup-Datei heruntergeladen und gestartet.
+- Der NSIS-Bootstrapper lädt `PCWachterSetup.exe` direkt über den `latest`-Release-Endpunkt.
+- Nach abgeschlossenem Download startet er das Setup und beendet sich sofort.
 - Dadurch bleiben Downloads für Endnutzer klein und aktuell.
+
+## Runtime
+
+- Das Setup wird self-contained gebaut.
+- Eine separate Installation der `.NET Desktop Runtime` ist auf Zielsystemen nicht erforderlich.
 
 ## Sicherheit
 
