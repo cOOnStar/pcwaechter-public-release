@@ -26,9 +26,3 @@ Hier findest du immer die aktuellen Installationsdateien für die Windows-App.
 
 - Zu jeder Version werden Prüfsummen veröffentlicht
 - Signierte Installer sind als vertrauenswürdiger Herausgeber erkennbar
-
-## Hinweis
-
-Dieses Repository ist ausschließlich für **öffentliche Downloads** gedacht.
-
-Technische Dokumentation, Entwicklungsdetails und interne Projektstruktur werden im privaten Hauptrepository gepflegt.
