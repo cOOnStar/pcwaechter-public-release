@@ -1,7 +1,6 @@
 ﻿# PCWächter – Public Releases
 
-Dieses Repository enthält ausschließlich veröffentlichte Installer-Artefakte für PCWächter.
-Der Quellcode liegt im privaten Hauptrepository.
+Dieses Repository enthält  veröffentlichte Installer für PCWächter.
 
 ## Zweck dieses Repositories
 
