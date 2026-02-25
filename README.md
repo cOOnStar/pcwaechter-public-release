@@ -1,46 +1,34 @@
-﻿# PCWächter – Public Releases
+# PC Wächter – Downloads
 
-Dieses Repository enthält  veröffentlichte Installer für PCWächter.
+Willkommen auf der offiziellen Download-Seite von **PC Wächter**.
 
-## Zweck dieses Repositories
+Hier findest du immer die aktuellen Installationsdateien für die Windows-App.
 
-- Öffentliche Bereitstellung von Installationsdateien
-- Stabiler Download-Endpunkt für den Bootstrapper
-- Historie aller veröffentlichten Versionen
+## Schnellstart
 
-## Schnellstart (für Anwender)
+1. Öffne [Releases](../../releases)
+2. Lade aus der neuesten Version eine der Dateien herunter:
+   - **PCWaechter_live_installer.exe** (empfohlen)
+     - Kleiner Download-Installer
+     - Holt automatisch die aktuelle Version
+   - **PCWaechter_offline_installer.exe**
+     - Vollständiger Installer
+     - Ideal für Installation ohne erneuten Download
+3. Starte die Datei und folge den Schritten im Setup
 
-1. Öffne die Seite [Releases](../../releases)
-2. Lade aus der neuesten Version eine der folgenden Dateien:
-	- **PC_Wachter_installer.exe** (empfohlen, kleiner Bootstrapper mit Download/Update-Logik)
-	- **PCWachterSetup.exe** (direktes Setup)
-3. Starte die Datei und folge dem Installer
+## Was ist in jedem Release enthalten?
 
-## Inhalte pro Release
-
-Jede Version enthält in der Regel:
-
-- `installer-manifest.json` – Metadaten (Legacy/Kompatibilität)
-- `PC_Wachter_installer.exe` – Bootstrapper
-- `PCWachterSetup.exe` – eigentliche Setup-Datei
-
-## Update- und Download-Prinzip
-
-- Der NSIS-Bootstrapper lädt `PCWachterSetup.exe` direkt über den `latest`-Release-Endpunkt.
-- Nach abgeschlossenem Download startet er das Setup und beendet sich sofort.
-- Dadurch bleiben Downloads für Endnutzer klein und aktuell.
-
-## Runtime
-
-- Das Setup wird self-contained gebaut.
-- Eine separate Installation der `.NET Desktop Runtime` ist auf Zielsystemen nicht erforderlich.
+- **PCWaechter_live_installer.exe** – Empfohlener Installer für die meisten Nutzer
+- **PCWaechter_offline_installer.exe** – Vollständiger Installer
+- **installer-manifest.json** – Technische Update-Informationen
 
 ## Sicherheit
 
-- Prüfsummen werden im Release geführt.
-- Bei aktivierter Signierung sind Setup und Bootstrapper digital signiert.
+- Zu jeder Version werden Prüfsummen veröffentlicht
+- Signierte Installer sind als vertrauenswürdiger Herausgeber erkennbar
 
-## Hinweise
+## Hinweis
 
-- In diesem Repository werden keine Quellcode-Änderungen gepflegt.
-- Issues und Entwicklung laufen im privaten Hauptrepository.
+Dieses Repository ist ausschließlich für **öffentliche Downloads** gedacht.
+
+Technische Dokumentation, Entwicklungsdetails und interne Projektstruktur werden im privaten Hauptrepository gepflegt.
